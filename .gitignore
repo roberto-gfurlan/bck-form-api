@@ -1,0 +1,7 @@
+node_modules
+src/index.ts
+data/ib_logfile0
+data/ibdata1
+data/ib_logfile1
+data/auto.cnf
+

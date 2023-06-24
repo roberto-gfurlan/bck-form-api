@@ -9,4 +9,5 @@ routes.get("/", (req, res) => {
 
 routes.get("/users", UserController.index);
 
+
 export default routes

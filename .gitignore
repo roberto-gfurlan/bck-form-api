@@ -5,3 +5,4 @@ data/ibdata1
 data/ib_logfile1
 data/auto.cnf
 
+package-lock.json

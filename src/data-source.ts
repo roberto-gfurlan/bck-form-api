@@ -1,25 +1,20 @@
-import dotenv from "dotenv";
-import { DataSource } from "typeorm";
+import dotenv from 'dotenv'
+import "reflect-metadata"
+import { DataSource } from 'typeorm'
+import { UsersProfile } from './entity/UsersProfile'
 
-dotenv.config();
-const connectDB = new DataSource({
-  type: "mysql",
-  host: "localhost",
+
+dotenv.config()
+
+export const myDataSource = new DataSource({
+  type: 'mysql',
+  host: 'localhost',
   port: 3306,
-  username: "root",
+  username: 'root',
   password: process.env.MYSQLDB_PASSWORD,
   database: process.env.MYSQLDB_DATABASE,
-  entities: ["./src/models/**/*.ts"],
+  entities: [UsersProfile],
+  synchronize: true,
+  logging: false,
 })
 
-connectDB
-    .initialize()
-    .then(() => {
-        console.log(`Data Source has been initialized`);
-    })
-    .catch((err) => {
-        console.error(`Data Source initialization error`, err);
-    })
-
-
-export default connectDB

@@ -1,13 +1,23 @@
-import { Router } from "express";
-import UserController from "./controllers/UserController";
+import { UserController } from "./controllers/UserController"
 
-const routes = Router()
-
-routes.get("/", (req, res) => {
-  return res.send("Hello World - Typescript");
-});
-
-routes.get("/users", UserController.index);
-
-
-export default routes
+export const Routes = [{
+    method: "get",
+    route: "/users",
+    controller: UserController,
+    action: "all"
+}, {
+    method: "get",
+    route: "/users/:id",
+    controller: UserController,
+    action: "one"
+}, {
+    method: "post",
+    route: "/users",
+    controller: UserController,
+    action: "save"
+}, {
+    method: "delete",
+    route: "/users/:id",
+    controller: UserController,
+    action: "remove"
+}]

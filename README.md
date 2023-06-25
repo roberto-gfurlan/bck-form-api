@@ -82,7 +82,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 **Utilitários**
 
--   Collection de API:  **[Postman](https://insomnia.rest/)**
+-   Collection de API:  **[Postman](https://github.com/roberto-gfurlan/bck-form-api/blob/main/Routes%20for%20UsersProfile.postman_collection.json)**
 
 ---
 

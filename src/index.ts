@@ -46,6 +46,6 @@ myDataSource.initialize().then(async () => {
     })
   );
 
-  console.log("Express server has started on port 4568. Open http://localhost:4568/ to see results");
+  console.log("Express server has started on port 4568. Open http://localhost:4568");
 
 }).catch(error => console.log(error));

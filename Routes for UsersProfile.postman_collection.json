@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "bf94afc4-0c2c-4a20-9cb6-e7c6d1f86e28",
+		"name": "Routes for UsersProfile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27289879"
+	},
+	"item": [
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"name\": \"John\",\n      \"cellphone\": 1198506422,\n      \"phone\": 1140047008,\n      \"email\": \"johngmail.com\",\n      \"PJ\": \"true\",\n      \"PF\": \"false\",\n      \"CPF\": 33344477702,\n      \"CNPJ\": 11887000169,\n      \"CEP\": 453422,\n      \"address\": \"Rua das Rosas\",\n      \"number\": 547,\n      \"complement\": \"cj 71\",\n      \"neighborhood\": \"Moema\",\n      \"city\": \"Sao Paulo\",\n      \"state\": \"SP\",\n      \"agreement\": \"true\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4568/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4568",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:4568",
+			"type": "string"
+		}
+	]
+}

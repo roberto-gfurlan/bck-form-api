@@ -45,6 +45,9 @@ $ git git@github.com:roberto-gfurlan/bck-form-api.git
 # Acesse a pasta do projeto no terminal/cmd
 $ cd bck-form-api
 
+# Crie uma pasta Data na raiz do projeto
+$ mkdir data
+
 # Suba o container do docker
 $ docker-compose up
 
@@ -90,5 +93,5 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <!-- Este projeto esta sobe a licença [MIT](./LICENSE). -->
 
-Feito com ❤️ por Roberto 👋🏽 [Entre em contato!](https://www.linkedin.com/in/roberto-gfurlan/)
-
+Copyright © 2023 [Roberto](https://www.linkedin.com/in/roberto-gfurlan/)<br />
+This project is [MIT](https://github.com/avneesh0612/next-progress-bar/blob/main/LICENSE) licensed.

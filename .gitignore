@@ -1,8 +1,8 @@
 node_modules
-src/index.ts
-data/ib_logfile0
-data/ibdata1
-data/ib_logfile1
-data/auto.cnf
+ib_logfile0
+ibdata1
+ib_logfile1
+auto.cnf
 
 package-lock.json
+yarn.lock
